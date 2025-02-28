@@ -1,0 +1,56 @@
+training:
+  name: "inverse_forward_regression_kittipretrained_dinov2_dit16_45_13_oxford" #"inverse_forward_regression_kittipretrained_dinov2_dit16_45_13_oxford"
+  regression: True # True for regression, False for diffusion
+  max_iterations: 650000 # 450000 for diffusion!!!!!! 
+  pretrain_path: "/hdd2/fanqi/ckps/checkpoints_for_rec/inverse_forward_regression_co3dpretrain_dinov2_dit16_perfect_unprojection_45_13_noise_step_1000_no_ckp/output/0212_161427_036430/checkpoints/ckpt_00432000.pth" #"/hdd1/fanqi/RayDiffusion_wo_oom_kitti_2fc_rectangle_correct_ndc_grid_rays_real_neg_fl/models/models/co3d_diffusion/checkpoints/ckpt_00450000.pth" #"/hdd1/fanqi/RayDiffusion_wo_oom_kitti_2fc_rectangle_correct_ndc_grid_rays_real_neg_fl/models/models/co3d_regression/checkpoints/ckpt_00300000.pth" 
+  resume: False # If True, must set hydra.run.dir accordingly
+  interval_save_checkpoint: 4000 # the 00-10 has 46402 poses, 500 * 8 = 4000 around 1/10 training data
+  lr: 5e-4
+  mixed_precision: True # should be True for training
+  matmul_precision: high 
+  batch_size: 8 # batch size is 8
+  num_workers: 8
+  freeze_encoder: True
+  seed: 0
+
+
+model:
+  pred_x0: True # if regression must be true
+  depth: 16
+  # feature_extractor: dino
+  # image_dino_scale: 3.33333 # 630/182 (3.461538) for dinov2 640/192 (3.33333) for dino
+  # num_patches_x: 40 # dino 40 # dinov2 45
+  # num_patches_y: 12 # dino 12 # dinov2 13
+  # image_width: 640
+  # image_height: 192
+  feature_extractor: dinov2
+  image_dino_scale: 3.461538 # 630/182 (3.461538) for dinov2 640/192 (3.33333) for dino
+  num_patches_x: 45 # dino 40 # dinov2 45
+  num_patches_y: 13 # dino 12 # dinov2 13
+  image_width: 630
+  image_height: 182
+  model_type: dit
+  num_images: 2
+  append_ndc: False # no crop differences between different images
+  random_num_images: False # for window optimization
+
+noise_scheduler:
+  type: cosine
+  max_timesteps: 1000
+  beta_start: 0.0001
+  beta_end: 0.2
+
+dataset:
+  name: ox
+  category: "all_train"
+  apply_augmentation: True
+
+debug:
+  wandb: False
+  project_name: cameras_as_rays_rec_2fc # identity_and_inverse_vo_rays
+  anomaly_detection: False
+
+hydra:
+  run:
+    dir: /hdd2/fanqi/ckps/checkpoints_for_rec/inverse_forward_regression_kittipretrained_dinov2_dit16_45_13_oxford/output/${now:%m%d_%H%M%S_%f}
+  output_subdir: hydra
