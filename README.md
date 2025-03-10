@@ -17,3 +17,4 @@
   <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/RayVO_video_trajectory_visualization.gif" width="800" />
 </div>
 
+[![Watch the video](https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/framework_rayvo.png)](visualization/video_trajectory_ray_representation.mp4)
