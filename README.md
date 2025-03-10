@@ -14,7 +14,7 @@
 
 ## Video of RayVO
 <div align="center">
-  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/RayVO_video_trajectory_visualization.gif" width="800" />
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/RayVO_video_trajectory_visualization.gif" width="600" />
 </div>
 
 <!--
