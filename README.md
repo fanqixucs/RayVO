@@ -6,7 +6,7 @@
 <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/framework_rayvo.png" width="500">  -->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/framework_rayvo.png" width="800">
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/framework_rayvo.png" width="600">
 </div>
 
  
