@@ -13,5 +13,5 @@
 
 
 ## Video of RayVO
-[Watch Video](visualization/video_trajectory_ray_representation.mp4)
+![Alt text](visualization/RayVO_video_trajectory_visualization.gif)
 The video shows
