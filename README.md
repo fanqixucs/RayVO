@@ -13,5 +13,7 @@
 
 
 ## Video of RayVO
-![Alt text](visualization/RayVO_video_trajectory_visualization.gif)
-The video shows
+<div align="center">
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/RayVO_video_trajectory_visualization.gif" width="800" />
+</div>
+
