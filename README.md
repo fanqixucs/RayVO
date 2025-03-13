@@ -13,8 +13,13 @@ This picture shows the framework of Ray Visual Odometry: (1) Training process: F
 
 
 ## Video of RayVO
+The following video shows how the prediction of direction and moments evolve along the trajectory of Seq 10 on Kitti, both in 3D space and across three different 2D projection spaces.
+
 <div align="center">
-  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/RayVO_video_trajectory_visualization.gif" width="600" />
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/animation_with_directions_and_moments_XYZ.gif" width="600" />
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/animation_with_directions_and_moments_XY.gif" width="600" />
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/animation_with_directions_and_moments_YZ.gif" width="600" />
+  <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/animation_with_directions_and_moments_XZ.gif" width="600" />
 </div>
 
 <!--
