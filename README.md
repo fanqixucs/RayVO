@@ -1,4 +1,5 @@
 # RayVO
+This repository contains the code for the paper: Ray Visual Odometry.
 
 ## Framework of RayVO
 
