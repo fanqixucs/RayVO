@@ -1,7 +1,7 @@
 # RayVO
 This repository contains the code for the paper: Ray Visual Odometry from the 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).
 
-## Framework of RayVO
+## 🧩 Framework of RayVO
 
 <!-- ![Alt text](visualization/framework_rayvo.png)
 <img src="https://raw.githubusercontent.com/fanqixucs/RayVO/main/visualization/framework_rayvo.png" width="500">  -->
@@ -65,8 +65,7 @@ python ray_diffusion/eval/evaluate_identity_forward.py
 python ray_diffusion/eval/evaluate_6dof_layer.py
 ```
 
-
-## Video of RayVO
+## 🎬 Visualization of RayVO
 The following video shows how the prediction of direction and moments evolves along the trajectory of Seq 10 on Kitti, both in 3D space and across three different 2D projection spaces.
 
 <div align="center">
