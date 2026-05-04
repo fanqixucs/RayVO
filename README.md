@@ -56,13 +56,13 @@ python train_inverse_forward_6dof_layer.py
 ## 📊 Evaluation
 ```bash
 # To evaluate the ray-based model outputting inverse and forward rays
-python evaluate_inverse_forward.py
+python ray_diffusion/eval/evaluate_inverse_forward.py
 
 # To evaluate the ray-based model outputting identity and forward rays
-python evaluate_identity_forward.py
+python ray_diffusion/eval/evaluate_identity_forward.py
 
 # To evaluate the 6DoF-based model
-evaluate_6dof_layer.py
+python ray_diffusion/eval/evaluate_6dof_layer.py
 ```
 
 
