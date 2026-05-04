@@ -1,5 +1,5 @@
 # RayVO
-This repository contains the code for the paper: Ray Visual Odometry in the 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).
+This repository contains the code for the paper: Ray Visual Odometry from the 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).
 
 ## Framework of RayVO
 
